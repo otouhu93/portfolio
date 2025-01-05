@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  border-width: 2px 0px 2px 1px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-left: 5px solid red; /* 左側に赤いボーダー */
+  font-weight: bold; /* テキストを太字に */
+  margin-bottom: 10px; /* 下の要素との余白 */
+}
+
+.keyVisual {
+  text-align: center;
+}
+
+.headerInner {
+  height: 100px;
+  /* marginをautoに設定すると、要素を左右中央に配置 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerInner,
+.mainInner {
+  max-width: 650px;
+  margin: auto;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.priceWrapper table,
+.priceWrapper th,
+.priceWrapper td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+/*border-collapseは表を区切るかどうか*/
+
+.priceWrapper th,
+.priceWrapper td {
+  padding: 7px;
+}
+
+.priceWrapper table {
+  width: 100%;
+}
+
+.priceWrapper th {
+  width: 150px;
+  background: #eeeeee;
+}
+/*thは大人、tdは料金*/
+
+footer {
+  background: #eeeeee;
+}
+
+.footerInner {
+  text-align: center;
+  /* 行揃え */
+  margin-top: 50px;
+  padding: 30px;
+}
+
+/* paddingとmarginの違いについて
+paddingとmarginは余白を指定するCSSプロパティですが、それぞれ役割が少しだけ違います。
+
+marginは要素と要素に間をあける役割
+paddingは要素の中身に余白をあける役割 */
